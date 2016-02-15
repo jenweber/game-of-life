@@ -1,8 +1,9 @@
 
 
 class Board
-  def make_board (size)
-    Array.new(size) {rand(2)}
+  def initialize (size)
+    @board = Array.new(size) {rand(2)}
+    @size = size
   end
 end
 class Box
@@ -12,3 +13,5 @@ class Box
     @col = col
   end
 end
+
+ourboard = Board.new
