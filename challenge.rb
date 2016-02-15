@@ -1,9 +1,10 @@
-board = []
 
-def make_board (size)
-  board = Array.new(size) {rand(2)}
+
+class Board
+  def make_board (size)
+    Array.new(size) {rand(2)}
+  end
 end
-
 class Box
   def initialize()
     @live = false
