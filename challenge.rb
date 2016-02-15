@@ -17,4 +17,8 @@ end
 
 ourboard = Board.new
 
-ourboard.map {|element| Box.new}
+ourboard.map {|element| Box.new()}
+
+
+col = (0..(Math.sqrt(ourboard.size)-1))
+row = (0..(Math.sqrt(ourboard.size)-1))
